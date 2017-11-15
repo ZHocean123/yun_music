@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2162A4EF5F57521726504A18 /* Pods_yun_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0793C045E46DF6F66822B7 /* Pods_yun_music.framework */; };
+		2F66ADA71FBBD7F1002BD8A5 /* PlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66ADA61FBBD7F1002BD8A5 /* PlayEngine.swift */; };
+		2F6BA0041FBA8E9100F1C825 /* DiscPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */; };
+		2FB49BF11FB97F6C00B8E387 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB49BF01FB97F6C00B8E387 /* UIImage+ImageEffects.m */; };
 		2FB576EF1FB9643C0019BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB576EE1FB9643C0019BF56 /* AppDelegate.swift */; };
 		2FB576F11FB9643C0019BF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB576F01FB9643C0019BF56 /* ViewController.swift */; };
 		2FB576F41FB9643C0019BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB576F21FB9643C0019BF56 /* Main.storyboard */; };
@@ -14,6 +18,11 @@
 		2FB576F91FB9643C0019BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB576F71FB9643C0019BF56 /* LaunchScreen.storyboard */; };
 		2FB577041FB9643C0019BF56 /* yun_musicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB577031FB9643C0019BF56 /* yun_musicTests.swift */; };
 		2FB5770F1FB9643C0019BF56 /* yun_musicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5770E1FB9643C0019BF56 /* yun_musicUITests.swift */; };
+		2FF043781FB96800006D0C58 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF043751FB967FF006D0C58 /* CircleView.swift */; };
+		2FF043791FB96800006D0C58 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF043761FB96800006D0C58 /* PlayViewController.swift */; };
+		2FF0437A1FB96800006D0C58 /* Layer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF043771FB96800006D0C58 /* Layer+Animation.swift */; };
+		534747C4F1376431A4CD2CF5 /* Pods_yun_musicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC004A6C22FDD1ABA750954 /* Pods_yun_musicTests.framework */; };
+		5E8E4DC64C1BCF0762071795 /* Pods_yun_musicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35928267909E1B1489CBDD2 /* Pods_yun_musicUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046EFDF8585FC2B889AC622B /* Pods-yun_music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_music.release.xcconfig"; path = "Pods/Target Support Files/Pods-yun_music/Pods-yun_music.release.xcconfig"; sourceTree = "<group>"; };
+		28127C9F53D7794AFF916F4C /* Pods-yun_musicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_musicUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yun_musicUITests/Pods-yun_musicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F66ADA41FBBCD54002BD8A5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2F66ADA61FBBD7F1002BD8A5 /* PlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayEngine.swift; sourceTree = "<group>"; };
+		2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscPlayView.swift; sourceTree = "<group>"; };
+		2FB49BEE1FB97F6A00B8E387 /* yun_music-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yun_music-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FB49BEF1FB97F6C00B8E387 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		2FB49BF01FB97F6C00B8E387 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		2FB576EB1FB9643C0019BF56 /* yun_music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yun_music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB576EE1FB9643C0019BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB576F01FB9643C0019BF56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,16 @@
 		2FB5770A1FB9643C0019BF56 /* yun_musicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yun_musicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB5770E1FB9643C0019BF56 /* yun_musicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yun_musicUITests.swift; sourceTree = "<group>"; };
 		2FB577101FB9643C0019BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF043751FB967FF006D0C58 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		2FF043761FB96800006D0C58 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		2FF043771FB96800006D0C58 /* Layer+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Layer+Animation.swift"; sourceTree = "<group>"; };
+		41E5B16C10773F8CBC99F64B /* Pods-yun_musicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_musicUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yun_musicUITests/Pods-yun_musicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AC004A6C22FDD1ABA750954 /* Pods_yun_musicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yun_musicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE4006FA58682B94C408CBE /* Pods-yun_musicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_musicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yun_musicTests/Pods-yun_musicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA42F3E55ED38125814DAAE0 /* Pods-yun_musicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_musicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yun_musicTests/Pods-yun_musicTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB0793C045E46DF6F66822B7 /* Pods_yun_music.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yun_music.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A9D256C68918279937A3FB /* Pods-yun_music.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_music.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yun_music/Pods-yun_music.debug.xcconfig"; sourceTree = "<group>"; };
+		F35928267909E1B1489CBDD2 /* Pods_yun_musicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yun_musicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2162A4EF5F57521726504A18 /* Pods_yun_music.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534747C4F1376431A4CD2CF5 /* Pods_yun_musicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +97,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8E4DC64C1BCF0762071795 /* Pods_yun_musicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EE43F745052678E463F1161 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5A9D256C68918279937A3FB /* Pods-yun_music.debug.xcconfig */,
+				046EFDF8585FC2B889AC622B /* Pods-yun_music.release.xcconfig */,
+				8BE4006FA58682B94C408CBE /* Pods-yun_musicTests.debug.xcconfig */,
+				CA42F3E55ED38125814DAAE0 /* Pods-yun_musicTests.release.xcconfig */,
+				41E5B16C10773F8CBC99F64B /* Pods-yun_musicUITests.debug.xcconfig */,
+				28127C9F53D7794AFF916F4C /* Pods-yun_musicUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		141E21D099443276D783C2E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB0793C045E46DF6F66822B7 /* Pods_yun_music.framework */,
+				8AC004A6C22FDD1ABA750954 /* Pods_yun_musicTests.framework */,
+				F35928267909E1B1489CBDD2 /* Pods_yun_musicUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F66ADA51FBBD7C7002BD8A5 /* PlayEngine */ = {
+			isa = PBXGroup;
+			children = (
+				2F66ADA61FBBD7F1002BD8A5 /* PlayEngine.swift */,
+			);
+			path = PlayEngine;
+			sourceTree = "<group>";
+		};
 		2FB576E21FB9643C0019BF56 = {
 			isa = PBXGroup;
 			children = (
+				2F66ADA41FBBCD54002BD8A5 /* .swiftlint.yml */,
 				2FB576ED1FB9643C0019BF56 /* yun_music */,
 				2FB577021FB9643C0019BF56 /* yun_musicTests */,
 				2FB5770D1FB9643C0019BF56 /* yun_musicUITests */,
 				2FB576EC1FB9643C0019BF56 /* Products */,
+				0EE43F745052678E463F1161 /* Pods */,
+				141E21D099443276D783C2E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +161,11 @@
 		2FB576ED1FB9643C0019BF56 /* yun_music */ = {
 			isa = PBXGroup;
 			children = (
+				2F66ADA51FBBD7C7002BD8A5 /* PlayEngine */,
+				2FF043761FB96800006D0C58 /* PlayViewController.swift */,
+				2FF043751FB967FF006D0C58 /* CircleView.swift */,
+				2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */,
+				2FF0437B1FB9680F006D0C58 /* Util */,
 				2FB576EE1FB9643C0019BF56 /* AppDelegate.swift */,
 				2FB576F01FB9643C0019BF56 /* ViewController.swift */,
 				2FB576F21FB9643C0019BF56 /* Main.storyboard */,
@@ -125,6 +194,17 @@
 			path = yun_musicUITests;
 			sourceTree = "<group>";
 		};
+		2FF0437B1FB9680F006D0C58 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2FB49BEF1FB97F6C00B8E387 /* UIImage+ImageEffects.h */,
+				2FB49BF01FB97F6C00B8E387 /* UIImage+ImageEffects.m */,
+				2FF043771FB96800006D0C58 /* Layer+Animation.swift */,
+				2FB49BEE1FB97F6A00B8E387 /* yun_music-Bridging-Header.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +212,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FB577131FB9643C0019BF56 /* Build configuration list for PBXNativeTarget "yun_music" */;
 			buildPhases = (
+				6EADDC1042A9716BE5CA687F /* [CP] Check Pods Manifest.lock */,
 				2FB576E71FB9643C0019BF56 /* Sources */,
 				2FB576E81FB9643C0019BF56 /* Frameworks */,
 				2FB576E91FB9643C0019BF56 /* Resources */,
+				AABF897166DB2930B26E71C0 /* [CP] Embed Pods Frameworks */,
+				2CAB3F0C80FE767E8EF401B9 /* [CP] Copy Pods Resources */,
+				2F66ADA31FBBCCE8002BD8A5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FB577161FB9643C0019BF56 /* Build configuration list for PBXNativeTarget "yun_musicTests" */;
 			buildPhases = (
+				936ECBE0F1B2E2CDC0EF40B3 /* [CP] Check Pods Manifest.lock */,
 				2FB576FB1FB9643C0019BF56 /* Sources */,
 				2FB576FC1FB9643C0019BF56 /* Frameworks */,
 				2FB576FD1FB9643C0019BF56 /* Resources */,
+				EC5090B5050CDBDDF6D7F750 /* [CP] Embed Pods Frameworks */,
+				59B1B3228B4025B489DA02E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FB577191FB9643C0019BF56 /* Build configuration list for PBXNativeTarget "yun_musicUITests" */;
 			buildPhases = (
+				A0A779389598162D0314E745 /* [CP] Check Pods Manifest.lock */,
 				2FB577061FB9643C0019BF56 /* Sources */,
 				2FB577071FB9643C0019BF56 /* Frameworks */,
 				2FB577081FB9643C0019BF56 /* Resources */,
+				D88DB91F7AF248308FCC2EBB /* [CP] Embed Pods Frameworks */,
+				C66EE2E69855715BBCD46E39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +283,7 @@
 				TargetAttributes = {
 					2FB576EA1FB9643C0019BF56 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					2FB576FE1FB9643C0019BF56 = {
@@ -254,13 +345,182 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CAB3F0C80FE767E8EF401B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yun_music/Pods-yun_music-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F66ADA31FBBCCE8002BD8A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		59B1B3228B4025B489DA02E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yun_musicTests/Pods-yun_musicTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EADDC1042A9716BE5CA687F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yun_music-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		936ECBE0F1B2E2CDC0EF40B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yun_musicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A779389598162D0314E745 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yun_musicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AABF897166DB2930B26E71C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yun_music/Pods-yun_music-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yun_music/Pods-yun_music-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66EE2E69855715BBCD46E39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yun_musicUITests/Pods-yun_musicUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88DB91F7AF248308FCC2EBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yun_musicUITests/Pods-yun_musicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5090B5050CDBDDF6D7F750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yun_musicTests/Pods-yun_musicTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FB576E71FB9643C0019BF56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF043791FB96800006D0C58 /* PlayViewController.swift in Sources */,
+				2FF0437A1FB96800006D0C58 /* Layer+Animation.swift in Sources */,
+				2FB49BF11FB97F6C00B8E387 /* UIImage+ImageEffects.m in Sources */,
+				2FF043781FB96800006D0C58 /* CircleView.swift in Sources */,
 				2FB576F11FB9643C0019BF56 /* ViewController.swift in Sources */,
+				2F6BA0041FBA8E9100F1C825 /* DiscPlayView.swift in Sources */,
 				2FB576EF1FB9643C0019BF56 /* AppDelegate.swift in Sources */,
+				2F66ADA71FBBD7F1002BD8A5 /* PlayEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +674,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -424,36 +684,46 @@
 		};
 		2FB577141FB9643C0019BF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A9D256C68918279937A3FB /* Pods-yun_music.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQJ6Y5LCMF;
 				INFOPLIST_FILE = yun_music/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ocean.com.yun-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yun_music/Util/yun_music-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2FB577151FB9643C0019BF56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 046EFDF8585FC2B889AC622B /* Pods-yun_music.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQJ6Y5LCMF;
 				INFOPLIST_FILE = yun_music/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ocean.com.yun-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yun_music/Util/yun_music-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2FB577171FB9643C0019BF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE4006FA58682B94C408CBE /* Pods-yun_musicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +741,7 @@
 		};
 		2FB577181FB9643C0019BF56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA42F3E55ED38125814DAAE0 /* Pods-yun_musicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +759,7 @@
 		};
 		2FB5771A1FB9643C0019BF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E5B16C10773F8CBC99F64B /* Pods-yun_musicUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +776,7 @@
 		};
 		2FB5771B1FB9643C0019BF56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28127C9F53D7794AFF916F4C /* Pods-yun_musicUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
