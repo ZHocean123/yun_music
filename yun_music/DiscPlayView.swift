@@ -55,16 +55,17 @@ extension DiscPlayView {
     func pause() {
         isPlaying = false
         curDiscView.pauseAnimation()
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.needleImageView.layer.transform = CATransform3DMakeRotation(-0.5, 0, 0, 1)
         })
     }
 
     func resume() {
         isPlaying = true
-        curDiscView.resumeAnimation()
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.needleImageView.layer.transform = CATransform3DIdentity
+        }, completion: { [weak self] (_) in
+            self?.curDiscView.resumeAnimation()
         })
     }
 }
@@ -102,9 +103,10 @@ extension DiscPlayView: UIScrollViewDelegate {
         }
 
         if isPlaying {
-            curDiscView.resumeAnimation()
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: 0.5, animations: {
                 self.needleImageView.layer.transform = CATransform3DIdentity
+            }, completion: { [weak self] (_) in
+                self?.curDiscView.resumeAnimation()
             })
         }
     }

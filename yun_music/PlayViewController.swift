@@ -14,6 +14,7 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var discPlayView: DiscPlayView!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var playSlider: PlaySlider!
 
     var isPlaying = false {
         didSet {
@@ -38,6 +39,8 @@ class PlayViewController: UIViewController {
 
         discPlayView.dataSource = self
         discPlayView.delegate = self
+
+        playSlider.downloadProgress = 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +62,7 @@ class PlayViewController: UIViewController {
 
 @objc extension PlayViewController {
     func onBtnPlay() {
+        playSlider.downloadProgress = playSlider.downloadProgress == 1 ? 0.5 : 1
         isPlaying = !isPlaying
         if discPlayView.isPlaying {
             discPlayView.pause()
@@ -68,28 +72,29 @@ class PlayViewController: UIViewController {
     }
 }
 
+let array = [#imageLiteral(resourceName: "1706442046308353"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2")]
+
 extension PlayViewController: DiscPlayViewDataSource {
     func discPlayView(_ discPlayView: DiscPlayView, imgForIndex index: Int) -> UIImage? {
         let index = ((index % 3) + 3) % 3
-        let array = [#imageLiteral(resourceName: "1706442046308353"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2")]
         return array[index]
     }
 }
 
 extension PlayViewController: DiscPlayViewDelegate {
     func discPlayViewDidPre(_ discPlayView: DiscPlayView) {
-        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
-            self.backgroundImageView.image =
-                self.discPlayView(discPlayView,
-                                  imgForIndex: discPlayView.currentIndex)?.blur()
-        })
+//        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+//            self.backgroundImageView.image =
+//                self.discPlayView(discPlayView,
+//                                  imgForIndex: discPlayView.currentIndex)?.blur()
+//        })
     }
 
     func discPlayViewDidNext(_ discPlayView: DiscPlayView) {
-        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
-            self.backgroundImageView.image =
-                self.discPlayView(discPlayView,
-                                  imgForIndex: discPlayView.currentIndex)?.blur()
-        })
+//        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+//            self.backgroundImageView.image =
+//                self.discPlayView(discPlayView,
+//                                  imgForIndex: discPlayView.currentIndex)?.blur()
+//        })
     }
 }

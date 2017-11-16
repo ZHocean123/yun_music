@@ -18,6 +18,7 @@
 		2FB576F91FB9643C0019BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB576F71FB9643C0019BF56 /* LaunchScreen.storyboard */; };
 		2FB577041FB9643C0019BF56 /* yun_musicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB577031FB9643C0019BF56 /* yun_musicTests.swift */; };
 		2FB5770F1FB9643C0019BF56 /* yun_musicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5770E1FB9643C0019BF56 /* yun_musicUITests.swift */; };
+		2FB950611FBD1C6D0067DF20 /* PlaySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB950601FBD1C6D0067DF20 /* PlaySlider.swift */; };
 		2FF043781FB96800006D0C58 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF043751FB967FF006D0C58 /* CircleView.swift */; };
 		2FF043791FB96800006D0C58 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF043761FB96800006D0C58 /* PlayViewController.swift */; };
 		2FF0437A1FB96800006D0C58 /* Layer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF043771FB96800006D0C58 /* Layer+Animation.swift */; };
@@ -64,6 +65,7 @@
 		2FB5770A1FB9643C0019BF56 /* yun_musicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yun_musicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB5770E1FB9643C0019BF56 /* yun_musicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yun_musicUITests.swift; sourceTree = "<group>"; };
 		2FB577101FB9643C0019BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB950601FBD1C6D0067DF20 /* PlaySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySlider.swift; sourceTree = "<group>"; };
 		2FF043751FB967FF006D0C58 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		2FF043761FB96800006D0C58 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		2FF043771FB96800006D0C58 /* Layer+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Layer+Animation.swift"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				2FB576F51FB9643C0019BF56 /* Assets.xcassets */,
 				2FB576F71FB9643C0019BF56 /* LaunchScreen.storyboard */,
 				2FB576FA1FB9643C0019BF56 /* Info.plist */,
+				2FB950601FBD1C6D0067DF20 /* PlaySlider.swift */,
 			);
 			path = yun_music;
 			sourceTree = "<group>";
@@ -451,10 +454,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-yun_music/Pods-yun_music-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,6 +524,7 @@
 				2FF043781FB96800006D0C58 /* CircleView.swift in Sources */,
 				2FB576F11FB9643C0019BF56 /* ViewController.swift in Sources */,
 				2F6BA0041FBA8E9100F1C825 /* DiscPlayView.swift in Sources */,
+				2FB950611FBD1C6D0067DF20 /* PlaySlider.swift in Sources */,
 				2FB576EF1FB9643C0019BF56 /* AppDelegate.swift in Sources */,
 				2F66ADA71FBBD7F1002BD8A5 /* PlayEngine.swift in Sources */,
 			);
