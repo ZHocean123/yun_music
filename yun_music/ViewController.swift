@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "bar"), for: .any, barMetrics: .default)
+        view.backgroundColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {

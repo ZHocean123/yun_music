@@ -40,7 +40,7 @@ class PlayViewController: UIViewController {
         discPlayView.dataSource = self
         discPlayView.delegate = self
 
-        playSlider.downloadProgress = 1
+        playSlider.addTarget(self, action: #selector(onChangeProgress), for: .valueChanged)
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,6 +70,10 @@ class PlayViewController: UIViewController {
             discPlayView.resume()
         }
     }
+
+    func onChangeProgress(slider: PlaySlider) {
+        print(slider.progress)
+    }
 }
 
 let array = [#imageLiteral(resourceName: "1706442046308353"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2")]
@@ -83,18 +87,18 @@ extension PlayViewController: DiscPlayViewDataSource {
 
 extension PlayViewController: DiscPlayViewDelegate {
     func discPlayViewDidPre(_ discPlayView: DiscPlayView) {
-//        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
-//            self.backgroundImageView.image =
-//                self.discPlayView(discPlayView,
-//                                  imgForIndex: discPlayView.currentIndex)?.blur()
-//        })
+        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+            self.backgroundImageView.image =
+                self.discPlayView(discPlayView,
+                                  imgForIndex: discPlayView.currentIndex)?.blur()
+        })
     }
 
     func discPlayViewDidNext(_ discPlayView: DiscPlayView) {
-//        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
-//            self.backgroundImageView.image =
-//                self.discPlayView(discPlayView,
-//                                  imgForIndex: discPlayView.currentIndex)?.blur()
-//        })
+        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+            self.backgroundImageView.image =
+                self.discPlayView(discPlayView,
+                                  imgForIndex: discPlayView.currentIndex)?.blur()
+        })
     }
 }
