@@ -40,6 +40,7 @@ class PlayViewController: UIViewController {
         discPlayView.dataSource = self
         discPlayView.delegate = self
 
+        playSlider.timeLong = 10
         playSlider.addTarget(self, action: #selector(onChangeProgress), for: .valueChanged)
     }
 
@@ -66,8 +67,10 @@ class PlayViewController: UIViewController {
         isPlaying = !isPlaying
         if discPlayView.isPlaying {
             discPlayView.pause()
+            playSlider.pause()
         } else {
             discPlayView.resume()
+            playSlider.resume()
         }
     }
 
