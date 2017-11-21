@@ -87,16 +87,17 @@ extension DiscPlayView: UIScrollViewDelegate {
         //        print(scrollView.contentOffset.x)
     }
 
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.x <= 0 {
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let point: CGPoint = targetContentOffset.pointee
+        if point.x <= 0 {
             curDiscView.reset()
-            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
+            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x + scrollView.bounds.width, y: 0), animated: false)
             currentIndex -= 1
             setupImages()
             delegate?.discPlayViewDidPre(self)
-        } else if scrollView.contentOffset.x >= scrollView.bounds.width * 2 {
+        } else if point.x >= scrollView.bounds.width * 2 {
             curDiscView.reset()
-            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
+            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x - scrollView.bounds.width, y: 0), animated: false)
             currentIndex += 1
             setupImages()
             delegate?.discPlayViewDidNext(self)
@@ -109,6 +110,30 @@ extension DiscPlayView: UIScrollViewDelegate {
                 self?.curDiscView.resumeAnimation()
             })
         }
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        if scrollView.contentOffset.x <= 0 {
+//            curDiscView.reset()
+//            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
+//            currentIndex -= 1
+//            setupImages()
+//            delegate?.discPlayViewDidPre(self)
+//        } else if scrollView.contentOffset.x >= scrollView.bounds.width * 2 {
+//            curDiscView.reset()
+//            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
+//            currentIndex += 1
+//            setupImages()
+//            delegate?.discPlayViewDidNext(self)
+//        }
+//
+//        if isPlaying {
+//            UIView.animate(withDuration: 0.5, animations: {
+//                self.needleImageView.layer.transform = CATransform3DIdentity
+//            }, completion: { [weak self] (_) in
+//                self?.curDiscView.resumeAnimation()
+//            })
+//        }
     }
 }
 

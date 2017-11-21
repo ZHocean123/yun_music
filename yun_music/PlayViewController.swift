@@ -90,18 +90,30 @@ extension PlayViewController: DiscPlayViewDataSource {
 
 extension PlayViewController: DiscPlayViewDelegate {
     func discPlayViewDidPre(_ discPlayView: DiscPlayView) {
-        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
-            self.backgroundImageView.image =
-                self.discPlayView(discPlayView,
-                                  imgForIndex: discPlayView.currentIndex)?.blur()
-        })
+        DispatchQueue(label: "img", qos: DispatchQoS.background).async { [weak self] in
+            let img = self?.discPlayView(discPlayView,
+                                         imgForIndex: discPlayView.currentIndex)?.blur()
+            DispatchQueue.main.async(execute: {
+                if img != nil, let `self` = self {
+                    UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+                        self.backgroundImageView.image = img
+                    })
+                }
+            })
+        }
     }
 
     func discPlayViewDidNext(_ discPlayView: DiscPlayView) {
-        UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
-            self.backgroundImageView.image =
-                self.discPlayView(discPlayView,
-                                  imgForIndex: discPlayView.currentIndex)?.blur()
-        })
+        DispatchQueue(label: "img", qos: DispatchQoS.background).async { [weak self] in
+            let img = self?.discPlayView(discPlayView,
+                                         imgForIndex: discPlayView.currentIndex)?.blur()
+            DispatchQueue.main.async(execute: {
+                if img != nil, let `self` = self {
+                    UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+                        self.backgroundImageView.image = img
+                    })
+                }
+            })
+        }
     }
 }
