@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		2162A4EF5F57521726504A18 /* Pods_yun_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0793C045E46DF6F66822B7 /* Pods_yun_music.framework */; };
+		2F5CEE001FDA7EA500E95E00 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEDFF1FDA7EA500E95E00 /* MetaData.swift */; };
+		2F5CEE021FDA7EE000E95E00 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE011FDA7EE000E95E00 /* Song.swift */; };
+		2F5CEE4D1FDA843B00E95E00 /* audio_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE041FDA843B00E95E00 /* audio_queue.cpp */; };
+		2F5CEE4E1FDA843B00E95E00 /* audio_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE061FDA843B00E95E00 /* audio_stream.cpp */; };
+		2F5CEE4F1FDA843B00E95E00 /* caching_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE081FDA843B00E95E00 /* caching_stream.cpp */; };
+		2F5CEE501FDA843B00E95E00 /* file_output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE0A1FDA843B00E95E00 /* file_output.cpp */; };
+		2F5CEE511FDA843B00E95E00 /* file_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE0C1FDA843B00E95E00 /* file_stream.cpp */; };
+		2F5CEE521FDA843B00E95E00 /* FSAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE101FDA843B00E95E00 /* FSAudioController.m */; };
+		2F5CEE531FDA843B00E95E00 /* FSAudioStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE121FDA843B00E95E00 /* FSAudioStream.mm */; };
+		2F5CEE541FDA843B00E95E00 /* FSCheckContentTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE141FDA843B00E95E00 /* FSCheckContentTypeRequest.m */; };
+		2F5CEE551FDA843B00E95E00 /* FSParsePlaylistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE161FDA843B00E95E00 /* FSParsePlaylistRequest.m */; };
+		2F5CEE561FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE181FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.m */; };
+		2F5CEE571FDA843B00E95E00 /* FSPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE1A1FDA843B00E95E00 /* FSPlaylistItem.m */; };
+		2F5CEE581FDA843B00E95E00 /* FSXMLHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE1C1FDA843B00E95E00 /* FSXMLHttpRequest.m */; };
+		2F5CEE591FDA843B00E95E00 /* http_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE1D1FDA843B00E95E00 /* http_stream.cpp */; };
+		2F5CEE5A1FDA843B00E95E00 /* id3_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE1F1FDA843B00E95E00 /* id3_parser.cpp */; };
+		2F5CEE5B1FDA843B00E95E00 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F5CEE211FDA843B00E95E00 /* Info.plist */; };
+		2F5CEE5C1FDA843B00E95E00 /* input_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE221FDA843B00E95E00 /* input_stream.cpp */; };
+		2F5CEE5D1FDA843B00E95E00 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE251FDA843B00E95E00 /* Reachability.m */; };
+		2F5CEE5E1FDA843B00E95E00 /* stream_configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5CEE261FDA843B00E95E00 /* stream_configuration.cpp */; };
+		2F5CEE741FDA885F00E95E00 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5CEE731FDA885F00E95E00 /* libxml2.tbd */; };
+		2F5CEE761FDA8B1500E95E00 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5CEE751FDA8B1500E95E00 /* MediaPlayer.framework */; };
+		2F5CEE781FDA8B1C00E95E00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5CEE771FDA8B1C00E95E00 /* AudioToolbox.framework */; };
 		2F66ADA71FBBD7F1002BD8A5 /* PlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66ADA61FBBD7F1002BD8A5 /* PlayEngine.swift */; };
 		2F6BA0041FBA8E9100F1C825 /* DiscPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */; };
 		2FB49BF11FB97F6C00B8E387 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB49BF01FB97F6C00B8E387 /* UIImage+ImageEffects.m */; };
@@ -47,6 +70,47 @@
 /* Begin PBXFileReference section */
 		046EFDF8585FC2B889AC622B /* Pods-yun_music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_music.release.xcconfig"; path = "Pods/Target Support Files/Pods-yun_music/Pods-yun_music.release.xcconfig"; sourceTree = "<group>"; };
 		28127C9F53D7794AFF916F4C /* Pods-yun_musicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yun_musicUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yun_musicUITests/Pods-yun_musicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F5CEDFF1FDA7EA500E95E00 /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
+		2F5CEE011FDA7EE000E95E00 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		2F5CEE041FDA843B00E95E00 /* audio_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio_queue.cpp; sourceTree = "<group>"; };
+		2F5CEE051FDA843B00E95E00 /* audio_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_queue.h; sourceTree = "<group>"; };
+		2F5CEE061FDA843B00E95E00 /* audio_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio_stream.cpp; sourceTree = "<group>"; };
+		2F5CEE071FDA843B00E95E00 /* audio_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_stream.h; sourceTree = "<group>"; };
+		2F5CEE081FDA843B00E95E00 /* caching_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = caching_stream.cpp; sourceTree = "<group>"; };
+		2F5CEE091FDA843B00E95E00 /* caching_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caching_stream.h; sourceTree = "<group>"; };
+		2F5CEE0A1FDA843B00E95E00 /* file_output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_output.cpp; sourceTree = "<group>"; };
+		2F5CEE0B1FDA843B00E95E00 /* file_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_output.h; sourceTree = "<group>"; };
+		2F5CEE0C1FDA843B00E95E00 /* file_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_stream.cpp; sourceTree = "<group>"; };
+		2F5CEE0D1FDA843B00E95E00 /* file_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_stream.h; sourceTree = "<group>"; };
+		2F5CEE0E1FDA843B00E95E00 /* FreeStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeStreamer.h; sourceTree = "<group>"; };
+		2F5CEE0F1FDA843B00E95E00 /* FSAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAudioController.h; sourceTree = "<group>"; };
+		2F5CEE101FDA843B00E95E00 /* FSAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAudioController.m; sourceTree = "<group>"; };
+		2F5CEE111FDA843B00E95E00 /* FSAudioStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAudioStream.h; sourceTree = "<group>"; };
+		2F5CEE121FDA843B00E95E00 /* FSAudioStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSAudioStream.mm; sourceTree = "<group>"; };
+		2F5CEE131FDA843B00E95E00 /* FSCheckContentTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCheckContentTypeRequest.h; sourceTree = "<group>"; };
+		2F5CEE141FDA843B00E95E00 /* FSCheckContentTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCheckContentTypeRequest.m; sourceTree = "<group>"; };
+		2F5CEE151FDA843B00E95E00 /* FSParsePlaylistRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSParsePlaylistRequest.h; sourceTree = "<group>"; };
+		2F5CEE161FDA843B00E95E00 /* FSParsePlaylistRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSParsePlaylistRequest.m; sourceTree = "<group>"; };
+		2F5CEE171FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSParseRssPodcastFeedRequest.h; sourceTree = "<group>"; };
+		2F5CEE181FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSParseRssPodcastFeedRequest.m; sourceTree = "<group>"; };
+		2F5CEE191FDA843B00E95E00 /* FSPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPlaylistItem.h; sourceTree = "<group>"; };
+		2F5CEE1A1FDA843B00E95E00 /* FSPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPlaylistItem.m; sourceTree = "<group>"; };
+		2F5CEE1B1FDA843B00E95E00 /* FSXMLHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSXMLHttpRequest.h; sourceTree = "<group>"; };
+		2F5CEE1C1FDA843B00E95E00 /* FSXMLHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSXMLHttpRequest.m; sourceTree = "<group>"; };
+		2F5CEE1D1FDA843B00E95E00 /* http_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = http_stream.cpp; sourceTree = "<group>"; };
+		2F5CEE1E1FDA843B00E95E00 /* http_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_stream.h; sourceTree = "<group>"; };
+		2F5CEE1F1FDA843B00E95E00 /* id3_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = id3_parser.cpp; sourceTree = "<group>"; };
+		2F5CEE201FDA843B00E95E00 /* id3_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id3_parser.h; sourceTree = "<group>"; };
+		2F5CEE211FDA843B00E95E00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5CEE221FDA843B00E95E00 /* input_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input_stream.cpp; sourceTree = "<group>"; };
+		2F5CEE231FDA843B00E95E00 /* input_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input_stream.h; sourceTree = "<group>"; };
+		2F5CEE241FDA843B00E95E00 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2F5CEE251FDA843B00E95E00 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2F5CEE261FDA843B00E95E00 /* stream_configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stream_configuration.cpp; sourceTree = "<group>"; };
+		2F5CEE271FDA843B00E95E00 /* stream_configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_configuration.h; sourceTree = "<group>"; };
+		2F5CEE731FDA885F00E95E00 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		2F5CEE751FDA8B1500E95E00 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2F5CEE771FDA8B1C00E95E00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2F66ADA41FBBCD54002BD8A5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		2F66ADA61FBBD7F1002BD8A5 /* PlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayEngine.swift; sourceTree = "<group>"; };
 		2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscPlayView.swift; sourceTree = "<group>"; };
@@ -85,6 +149,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5CEE781FDA8B1C00E95E00 /* AudioToolbox.framework in Frameworks */,
+				2F5CEE761FDA8B1500E95E00 /* MediaPlayer.framework in Frameworks */,
+				2F5CEE741FDA885F00E95E00 /* libxml2.tbd in Frameworks */,
 				2162A4EF5F57521726504A18 /* Pods_yun_music.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,11 +191,85 @@
 		141E21D099443276D783C2E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F5CEE771FDA8B1C00E95E00 /* AudioToolbox.framework */,
+				2F5CEE751FDA8B1500E95E00 /* MediaPlayer.framework */,
+				2F5CEE731FDA885F00E95E00 /* libxml2.tbd */,
 				CB0793C045E46DF6F66822B7 /* Pods_yun_music.framework */,
 				8AC004A6C22FDD1ABA750954 /* Pods_yun_musicTests.framework */,
 				F35928267909E1B1489CBDD2 /* Pods_yun_musicUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F5CEDFC1FDA7DF500E95E00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FB576F01FB9643C0019BF56 /* ViewController.swift */,
+				2F5CEDFD1FDA7E1200E95E00 /* PlayViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F5CEDFD1FDA7E1200E95E00 /* PlayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2FF043751FB967FF006D0C58 /* CircleView.swift */,
+				2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */,
+				2FF043761FB96800006D0C58 /* PlayViewController.swift */,
+			);
+			path = PlayViewController;
+			sourceTree = "<group>";
+		};
+		2F5CEDFE1FDA7E8500E95E00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F5CEDFF1FDA7EA500E95E00 /* MetaData.swift */,
+				2F5CEE011FDA7EE000E95E00 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F5CEE031FDA843B00E95E00 /* FreeStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				2F5CEE041FDA843B00E95E00 /* audio_queue.cpp */,
+				2F5CEE051FDA843B00E95E00 /* audio_queue.h */,
+				2F5CEE061FDA843B00E95E00 /* audio_stream.cpp */,
+				2F5CEE071FDA843B00E95E00 /* audio_stream.h */,
+				2F5CEE081FDA843B00E95E00 /* caching_stream.cpp */,
+				2F5CEE091FDA843B00E95E00 /* caching_stream.h */,
+				2F5CEE0A1FDA843B00E95E00 /* file_output.cpp */,
+				2F5CEE0B1FDA843B00E95E00 /* file_output.h */,
+				2F5CEE0C1FDA843B00E95E00 /* file_stream.cpp */,
+				2F5CEE0D1FDA843B00E95E00 /* file_stream.h */,
+				2F5CEE0E1FDA843B00E95E00 /* FreeStreamer.h */,
+				2F5CEE0F1FDA843B00E95E00 /* FSAudioController.h */,
+				2F5CEE101FDA843B00E95E00 /* FSAudioController.m */,
+				2F5CEE111FDA843B00E95E00 /* FSAudioStream.h */,
+				2F5CEE121FDA843B00E95E00 /* FSAudioStream.mm */,
+				2F5CEE131FDA843B00E95E00 /* FSCheckContentTypeRequest.h */,
+				2F5CEE141FDA843B00E95E00 /* FSCheckContentTypeRequest.m */,
+				2F5CEE151FDA843B00E95E00 /* FSParsePlaylistRequest.h */,
+				2F5CEE161FDA843B00E95E00 /* FSParsePlaylistRequest.m */,
+				2F5CEE171FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.h */,
+				2F5CEE181FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.m */,
+				2F5CEE191FDA843B00E95E00 /* FSPlaylistItem.h */,
+				2F5CEE1A1FDA843B00E95E00 /* FSPlaylistItem.m */,
+				2F5CEE1B1FDA843B00E95E00 /* FSXMLHttpRequest.h */,
+				2F5CEE1C1FDA843B00E95E00 /* FSXMLHttpRequest.m */,
+				2F5CEE1D1FDA843B00E95E00 /* http_stream.cpp */,
+				2F5CEE1E1FDA843B00E95E00 /* http_stream.h */,
+				2F5CEE1F1FDA843B00E95E00 /* id3_parser.cpp */,
+				2F5CEE201FDA843B00E95E00 /* id3_parser.h */,
+				2F5CEE211FDA843B00E95E00 /* Info.plist */,
+				2F5CEE221FDA843B00E95E00 /* input_stream.cpp */,
+				2F5CEE231FDA843B00E95E00 /* input_stream.h */,
+				2F5CEE241FDA843B00E95E00 /* Reachability.h */,
+				2F5CEE251FDA843B00E95E00 /* Reachability.m */,
+				2F5CEE261FDA843B00E95E00 /* stream_configuration.cpp */,
+				2F5CEE271FDA843B00E95E00 /* stream_configuration.h */,
+			);
+			path = FreeStreamer;
 			sourceTree = "<group>";
 		};
 		2F66ADA51FBBD7C7002BD8A5 /* PlayEngine */ = {
@@ -165,13 +306,13 @@
 		2FB576ED1FB9643C0019BF56 /* yun_music */ = {
 			isa = PBXGroup;
 			children = (
+				2F5CEE031FDA843B00E95E00 /* FreeStreamer */,
+				2F5CEDFE1FDA7E8500E95E00 /* Models */,
 				2F66ADA51FBBD7C7002BD8A5 /* PlayEngine */,
-				2FF043761FB96800006D0C58 /* PlayViewController.swift */,
-				2FF043751FB967FF006D0C58 /* CircleView.swift */,
-				2F6BA0031FBA8E9100F1C825 /* DiscPlayView.swift */,
+				2F5CEDFC1FDA7DF500E95E00 /* Views */,
 				2FF0437B1FB9680F006D0C58 /* Util */,
 				2FB576EE1FB9643C0019BF56 /* AppDelegate.swift */,
-				2FB576F01FB9643C0019BF56 /* ViewController.swift */,
+				2FB49BEE1FB97F6A00B8E387 /* yun_music-Bridging-Header.h */,
 				2FB576F21FB9643C0019BF56 /* Main.storyboard */,
 				2FB576F51FB9643C0019BF56 /* Assets.xcassets */,
 				2FB576F71FB9643C0019BF56 /* LaunchScreen.storyboard */,
@@ -205,7 +346,6 @@
 				2FB49BEF1FB97F6C00B8E387 /* UIImage+ImageEffects.h */,
 				2FB49BF01FB97F6C00B8E387 /* UIImage+ImageEffects.m */,
 				2FF043771FB96800006D0C58 /* Layer+Animation.swift */,
-				2FB49BEE1FB97F6A00B8E387 /* yun_music-Bridging-Header.h */,
 				2FBCC7C71FC500D30038971B /* UIControl+Target.swift */,
 			);
 			path = Util;
@@ -329,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5CEE5B1FDA843B00E95E00 /* Info.plist in Resources */,
 				2FB576F91FB9643C0019BF56 /* LaunchScreen.storyboard in Resources */,
 				2FB576F61FB9643C0019BF56 /* Assets.xcassets in Resources */,
 				2FB576F41FB9643C0019BF56 /* Main.storyboard in Resources */,
@@ -456,11 +597,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-yun_music/Pods-yun_music-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
@@ -521,15 +666,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5CEE5C1FDA843B00E95E00 /* input_stream.cpp in Sources */,
+				2F5CEE581FDA843B00E95E00 /* FSXMLHttpRequest.m in Sources */,
+				2F5CEE571FDA843B00E95E00 /* FSPlaylistItem.m in Sources */,
+				2F5CEE501FDA843B00E95E00 /* file_output.cpp in Sources */,
+				2F5CEE021FDA7EE000E95E00 /* Song.swift in Sources */,
 				2FF043791FB96800006D0C58 /* PlayViewController.swift in Sources */,
+				2F5CEE531FDA843B00E95E00 /* FSAudioStream.mm in Sources */,
+				2F5CEE4E1FDA843B00E95E00 /* audio_stream.cpp in Sources */,
+				2F5CEE4F1FDA843B00E95E00 /* caching_stream.cpp in Sources */,
+				2F5CEE551FDA843B00E95E00 /* FSParsePlaylistRequest.m in Sources */,
+				2F5CEE5D1FDA843B00E95E00 /* Reachability.m in Sources */,
+				2F5CEE511FDA843B00E95E00 /* file_stream.cpp in Sources */,
+				2F5CEE001FDA7EA500E95E00 /* MetaData.swift in Sources */,
 				2FF0437A1FB96800006D0C58 /* Layer+Animation.swift in Sources */,
 				2FB49BF11FB97F6C00B8E387 /* UIImage+ImageEffects.m in Sources */,
+				2F5CEE5A1FDA843B00E95E00 /* id3_parser.cpp in Sources */,
+				2F5CEE521FDA843B00E95E00 /* FSAudioController.m in Sources */,
 				2FF043781FB96800006D0C58 /* CircleView.swift in Sources */,
+				2F5CEE5E1FDA843B00E95E00 /* stream_configuration.cpp in Sources */,
 				2FB576F11FB9643C0019BF56 /* ViewController.swift in Sources */,
 				2F6BA0041FBA8E9100F1C825 /* DiscPlayView.swift in Sources */,
 				2FB950611FBD1C6D0067DF20 /* PlaySlider.swift in Sources */,
+				2F5CEE541FDA843B00E95E00 /* FSCheckContentTypeRequest.m in Sources */,
 				2FB576EF1FB9643C0019BF56 /* AppDelegate.swift in Sources */,
+				2F5CEE561FDA843B00E95E00 /* FSParseRssPodcastFeedRequest.m in Sources */,
 				2FBCC7C81FC500D30038971B /* UIControl+Target.swift in Sources */,
+				2F5CEE4D1FDA843B00E95E00 /* audio_queue.cpp in Sources */,
+				2F5CEE591FDA843B00E95E00 /* http_stream.cpp in Sources */,
 				2F66ADA71FBBD7F1002BD8A5 /* PlayEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -700,12 +864,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQJ6Y5LCMF;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AudioKit\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = yun_music/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ocean.com.yun-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "yun_music/Util/yun_music-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "yun_music/yun_music-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -720,12 +890,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQJ6Y5LCMF;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AudioKit\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = yun_music/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ocean.com.yun-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "yun_music/Util/yun_music-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "yun_music/yun_music-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

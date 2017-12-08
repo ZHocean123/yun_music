@@ -7,7 +7,7 @@ target 'yun_music' do
 
   # Pods for yun_music
   pod 'SnapKit'
-#  pod 'AudioKit'
+  pod 'AudioKit'
   pod 'pop'
 
   target 'yun_musicTests' do

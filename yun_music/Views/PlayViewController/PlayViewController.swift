@@ -11,6 +11,8 @@ import SnapKit
 
 class PlayViewController: UIViewController {
 
+    var player = FSAudioStream(configuration: FSStreamConfiguration())
+
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var discPlayView: DiscPlayView!
     @IBOutlet weak var playButton: UIButton!
@@ -99,8 +101,8 @@ extension PlayViewController: DiscPlayViewDelegate {
                     UIView.transition(with: self.backgroundImageView,
                                       duration: 1,
                                       options: .transitionCrossDissolve, animations: {
-                        self.backgroundImageView.image = img
-                    })
+                                          self.backgroundImageView.image = img
+                                      })
                 }
             })
         }

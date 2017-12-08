@@ -61,6 +61,7 @@ class CircleView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        imageView.image = #imageLiteral(resourceName: "cm2_default_cover_play")
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
         circleImageView.contentMode = .scaleAspectFill

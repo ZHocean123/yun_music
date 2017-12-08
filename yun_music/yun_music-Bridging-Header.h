@@ -3,3 +3,4 @@
 //
 
 #import "UIImage+ImageEffects.h"
+#import "FSAudioStream.h"
