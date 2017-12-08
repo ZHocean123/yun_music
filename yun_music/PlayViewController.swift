@@ -35,7 +35,8 @@ class PlayViewController: UIViewController {
         playButton.addTarget(self, action: #selector(onBtnPlay), for: .touchUpInside)
 
         backgroundImageView.contentMode = .scaleAspectFill
-        backgroundImageView.image = #imageLiteral(resourceName: "1706442046308353").blur()
+        backgroundImageView.layer.masksToBounds = true
+        backgroundImageView.image = #imageLiteral(resourceName: "1706442046308353")
 
         discPlayView.dataSource = self
         discPlayView.delegate = self
@@ -92,10 +93,12 @@ extension PlayViewController: DiscPlayViewDelegate {
     func discPlayViewDidPre(_ discPlayView: DiscPlayView) {
         DispatchQueue(label: "img", qos: DispatchQoS.background).async { [weak self] in
             let img = self?.discPlayView(discPlayView,
-                                         imgForIndex: discPlayView.currentIndex)?.blur()
+                                         imgForIndex: discPlayView.currentIndex)
             DispatchQueue.main.async(execute: {
                 if img != nil, let `self` = self {
-                    UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {
+                    UIView.transition(with: self.backgroundImageView,
+                                      duration: 1,
+                                      options: .transitionCrossDissolve, animations: {
                         self.backgroundImageView.image = img
                     })
                 }
@@ -106,7 +109,7 @@ extension PlayViewController: DiscPlayViewDelegate {
     func discPlayViewDidNext(_ discPlayView: DiscPlayView) {
         DispatchQueue(label: "img", qos: DispatchQoS.background).async { [weak self] in
             let img = self?.discPlayView(discPlayView,
-                                         imgForIndex: discPlayView.currentIndex)?.blur()
+                                         imgForIndex: discPlayView.currentIndex)
             DispatchQueue.main.async(execute: {
                 if img != nil, let `self` = self {
                     UIView.transition(with: self.backgroundImageView, duration: 1, options: .transitionCrossDissolve, animations: {

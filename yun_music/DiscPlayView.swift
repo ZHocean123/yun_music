@@ -32,6 +32,7 @@ class DiscPlayView: UIView {
         needleCenterXConstraint.constant -= 21
         needleImageView.layer.transform = CATransform3DMakeRotation(-0.5, 0, 0, 1)
 
+        scrollView.showsHorizontalScrollIndicator = false
         scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
     }
 
@@ -48,7 +49,6 @@ class DiscPlayView: UIView {
         curDiscView.img = dataSource?.discPlayView(self, imgForIndex: currentIndex)
         nextDiscView.img = dataSource?.discPlayView(self, imgForIndex: currentIndex + 1)
     }
-
 }
 
 extension DiscPlayView {
@@ -79,25 +79,23 @@ extension DiscPlayView: UIScrollViewDelegate {
         })
     }
 
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset.x)
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView,
+                                   withVelocity velocity: CGPoint,
+                                   targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        scrollView.isUserInteractionEnabled = false
     }
 
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        //        print(scrollView.contentOffset.x)
-    }
-
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let point: CGPoint = targetContentOffset.pointee
-        if point.x <= 0 {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        scrollView.isUserInteractionEnabled = true
+        if scrollView.contentOffset.x <= 0 {
             curDiscView.reset()
-            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x + scrollView.bounds.width, y: 0), animated: false)
+            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
             currentIndex -= 1
             setupImages()
             delegate?.discPlayViewDidPre(self)
-        } else if point.x >= scrollView.bounds.width * 2 {
+        } else if scrollView.contentOffset.x >= scrollView.bounds.width * 2 {
             curDiscView.reset()
-            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x - scrollView.bounds.width, y: 0), animated: false)
+            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
             currentIndex += 1
             setupImages()
             delegate?.discPlayViewDidNext(self)
@@ -110,30 +108,6 @@ extension DiscPlayView: UIScrollViewDelegate {
                 self?.curDiscView.resumeAnimation()
             })
         }
-    }
-
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.x <= 0 {
-//            curDiscView.reset()
-//            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
-//            currentIndex -= 1
-//            setupImages()
-//            delegate?.discPlayViewDidPre(self)
-//        } else if scrollView.contentOffset.x >= scrollView.bounds.width * 2 {
-//            curDiscView.reset()
-//            scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: false)
-//            currentIndex += 1
-//            setupImages()
-//            delegate?.discPlayViewDidNext(self)
-//        }
-//
-//        if isPlaying {
-//            UIView.animate(withDuration: 0.5, animations: {
-//                self.needleImageView.layer.transform = CATransform3DIdentity
-//            }, completion: { [weak self] (_) in
-//                self?.curDiscView.resumeAnimation()
-//            })
-//        }
     }
 }
 

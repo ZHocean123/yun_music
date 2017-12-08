@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a8b-cR-EMy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a8b-cR-EMy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -64,6 +64,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kXL-b0-coj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbJ-mt-BAM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XGk-Ei-m9j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6D-VW-BMM" customClass="DiscPlayView" customModule="yun_music" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="432"/>
                                 <subviews>
@@ -217,7 +225,7 @@
                                         </connections>
                                     </scrollView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_play_needle_play" translatesAutoresizingMaskIntoConstraints="NO" id="ivd-El-NRh">
-                                        <rect key="frame" x="161" y="-27" width="97" height="153"/>
+                                        <rect key="frame" x="169.5" y="-27" width="80" height="140"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -243,8 +251,8 @@
                                 <state key="normal" image="cm2_play_icn_love"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTw-xh-BQQ">
-                                <rect key="frame" x="104" y="502" width="83.5" height="44"/>
-                                <state key="normal" image="cm2_icn_dld"/>
+                                <rect key="frame" x="104" y="510" width="83.5" height="28"/>
+                                <state key="normal" image="cm2_play_btn_dld"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-vN-UWz">
                                 <rect key="frame" x="187.5" y="499.5" width="84" height="49"/>
@@ -262,12 +270,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWd-Sy-Nq2">
-                                <rect key="frame" x="8" y="611.5" width="72" height="44"/>
-                                <state key="normal" image="cm2_icn_loop"/>
+                                <rect key="frame" x="8" y="619.5" width="72" height="28"/>
+                                <state key="normal" image="cm2_play_btn_loop"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJD-r7-Myu">
                                 <rect key="frame" x="80" y="609" width="71.5" height="49"/>
-                                <state key="normal" image="cm2_fm_btn_previous"/>
+                                <state key="normal" image="cm2_play_btn_prev"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfC-EA-CVX">
                                 <rect key="frame" x="223" y="609" width="72" height="49"/>
@@ -288,6 +296,7 @@
                             <constraint firstItem="ptg-20-AAd" firstAttribute="leading" secondItem="DOg-cl-bAA" secondAttribute="leading" constant="20" id="2wV-na-EaU"/>
                             <constraint firstItem="Q1g-02-hPC" firstAttribute="leading" secondItem="DOg-cl-bAA" secondAttribute="leading" constant="16" id="5rs-NY-pMI"/>
                             <constraint firstItem="lJD-r7-Myu" firstAttribute="leading" secondItem="HWd-Sy-Nq2" secondAttribute="trailing" id="5yy-Lk-FaO"/>
+                            <constraint firstItem="mbJ-mt-BAM" firstAttribute="top" secondItem="nCA-NY-H7k" secondAttribute="top" id="67R-dc-jcH"/>
                             <constraint firstItem="kXL-b0-coj" firstAttribute="top" secondItem="nCA-NY-H7k" secondAttribute="top" id="67t-65-Jzh"/>
                             <constraint firstItem="Z6D-VW-BMM" firstAttribute="leading" secondItem="DOg-cl-bAA" secondAttribute="leading" id="6Ha-4r-Xbp"/>
                             <constraint firstItem="TpR-CD-VmS" firstAttribute="leading" secondItem="lJD-r7-Myu" secondAttribute="trailing" id="7Wl-pj-7oW"/>
@@ -301,10 +310,12 @@
                             <constraint firstItem="DOg-cl-bAA" firstAttribute="trailing" secondItem="Dkg-3C-gtF" secondAttribute="trailing" constant="8" id="IMM-Ye-cFO"/>
                             <constraint firstItem="Z6D-VW-BMM" firstAttribute="trailing" secondItem="DOg-cl-bAA" secondAttribute="trailing" id="Ibp-XC-PKK"/>
                             <constraint firstItem="bfC-EA-CVX" firstAttribute="leading" secondItem="TpR-CD-VmS" secondAttribute="trailing" id="KSb-B6-eXI"/>
+                            <constraint firstItem="mbJ-mt-BAM" firstAttribute="leading" secondItem="nCA-NY-H7k" secondAttribute="leading" id="N8n-uD-eff"/>
                             <constraint firstItem="ptg-20-AAd" firstAttribute="width" secondItem="VTw-xh-BQQ" secondAttribute="width" id="Xxx-Dw-Wzh"/>
                             <constraint firstItem="TpR-CD-VmS" firstAttribute="centerY" secondItem="bfC-EA-CVX" secondAttribute="centerY" id="YHM-dx-Ny9"/>
                             <constraint firstItem="Dkg-3C-gtF" firstAttribute="leading" secondItem="bfC-EA-CVX" secondAttribute="trailing" id="Yqz-UK-yok"/>
                             <constraint firstItem="TpR-CD-VmS" firstAttribute="width" secondItem="bfC-EA-CVX" secondAttribute="width" id="dqm-l0-VQo"/>
+                            <constraint firstAttribute="trailing" secondItem="mbJ-mt-BAM" secondAttribute="trailing" id="e2j-DP-4At"/>
                             <constraint firstItem="ptg-20-AAd" firstAttribute="top" secondItem="Z6D-VW-BMM" secondAttribute="bottom" constant="8" id="eur-h8-jkT"/>
                             <constraint firstAttribute="bottom" secondItem="kXL-b0-coj" secondAttribute="bottom" id="iaJ-gt-ckH"/>
                             <constraint firstItem="kXL-b0-coj" firstAttribute="leading" secondItem="nCA-NY-H7k" secondAttribute="leading" id="lRf-J8-fL7"/>
@@ -319,6 +330,7 @@
                             <constraint firstItem="5Vc-Gh-Rc9" firstAttribute="leading" secondItem="BgC-vN-UWz" secondAttribute="trailing" id="sYK-CG-pPF"/>
                             <constraint firstItem="BgC-vN-UWz" firstAttribute="width" secondItem="5Vc-Gh-Rc9" secondAttribute="width" id="tsx-IE-2vw"/>
                             <constraint firstItem="DOg-cl-bAA" firstAttribute="trailing" secondItem="Q1g-02-hPC" secondAttribute="trailing" constant="16" id="tt9-w5-sc6"/>
+                            <constraint firstAttribute="bottom" secondItem="mbJ-mt-BAM" secondAttribute="bottom" id="vK2-bq-qKT"/>
                             <constraint firstItem="DOg-cl-bAA" firstAttribute="trailing" secondItem="5Vc-Gh-Rc9" secondAttribute="trailing" constant="20" id="wz9-mu-Sdu"/>
                             <constraint firstItem="Q1g-02-hPC" firstAttribute="top" secondItem="ptg-20-AAd" secondAttribute="bottom" constant="20" id="yZx-al-xlJ"/>
                             <constraint firstItem="DOg-cl-bAA" firstAttribute="bottom" secondItem="TpR-CD-VmS" secondAttribute="bottom" id="yqo-CY-bmI"/>
@@ -341,13 +353,13 @@
         <image name="cm2_fm_btn_cmt_number" width="49" height="49"/>
         <image name="cm2_fm_btn_next" width="49" height="49"/>
         <image name="cm2_fm_btn_play" width="68" height="68"/>
-        <image name="cm2_fm_btn_previous" width="49" height="49"/>
-        <image name="cm2_icn_dld" width="44" height="44"/>
         <image name="cm2_icn_list" width="44" height="44"/>
-        <image name="cm2_icn_loop" width="44" height="44"/>
+        <image name="cm2_play_btn_dld" width="28" height="28"/>
+        <image name="cm2_play_btn_loop" width="28" height="28"/>
+        <image name="cm2_play_btn_prev" width="49" height="49"/>
         <image name="cm2_play_disc" width="238" height="238"/>
         <image name="cm2_play_icn_love" width="40" height="40"/>
         <image name="cm2_play_icn_more" width="40" height="40"/>
-        <image name="cm2_play_needle_play" width="97" height="153"/>
+        <image name="cm2_play_needle_play" width="80" height="140"/>
     </resources>
 </document>
